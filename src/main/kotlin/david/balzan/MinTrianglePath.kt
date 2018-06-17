@@ -17,5 +17,6 @@ fun main(args: Array<String>) {
     }
 
     val solution = processTree(tree)
+    println(solution.path.joinToString(prefix = "Minimal path is:", separator = " + ", postfix = " = ") + solution.value)
 }
 
