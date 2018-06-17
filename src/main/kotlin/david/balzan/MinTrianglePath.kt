@@ -17,6 +17,10 @@ fun main(args: Array<String>) {
     }
 
     val solution = processTree(tree)
+    displayResult(solution)
+}
+
+private fun displayResult(solution: Traverser.Solution) {
     println(solution.path.joinToString(prefix = "Minimal path is:", separator = " + ", postfix = " = ") + solution.value)
 }
 
